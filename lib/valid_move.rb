@@ -1,5 +1,5 @@
-def valid_move(board, index)
-  if(1 <= index <= 9 && position_taken?(board, index))
+def valid_move?(board, index)
+  if(1 <= index <= 9 && !position_taken?(board, index))
     return true
   end
 end
